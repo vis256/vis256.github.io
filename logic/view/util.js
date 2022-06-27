@@ -37,6 +37,7 @@ function Util()
         case 'file': icon = 'fas fa-folder-open'; break;
         case 'dash': icon = 'fas fa-caret-right'; break;
         case 'link': icon = 'fas fa-link'; break;
+        case 'ghlink': icon = 'fas fa-wrench'; break;
         case 'true': icon = 'fas fa-check'; break;
         case 'false': icon = 'fas fa-times'; break;
       }

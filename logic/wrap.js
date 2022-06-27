@@ -36,12 +36,14 @@ function Wrap()
     for (let i = 0; i < keys.length; i++)
     {
       let entry = database[keys[i]];
+      console.log(entry)
 
       entry.AUTH = this.commaSplit(entry.AUTH);
       entry.TAGS = this.commaSplit(entry.TAGS);
       entry.TYPE = this.commaSplit(entry.TYPE);
       entry.PROJ = this.commaSplit(entry.PROJ);
 
+      entry.GHLINK = this.objectSplit(entry.GHLINK);
       entry.LINK = this.objectSplit(entry.LINK);
       entry.FILE = this.objectSplit(entry.FILE);
 

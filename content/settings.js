@@ -20,9 +20,9 @@ const SETTINGS =
 	SHOWNOTE: true,
 	SHOWQOTE: true,
 	SHOWTERM: true,
-	SHOWDONE: true,
-	SHOWPROG: true,
+	SHOWDONE: false,
+	SHOWPROG: false,
 	SHOWIMAG: true,
-	SHOWFILE: true,
+	SHOWFILE: false,
 	SHOWOVERLAY: true
 }

@@ -105,10 +105,6 @@ function Grid()
       if (main.util.isDefined(value.LINK))
       {
         var idUrl = "url";
-        if (main.util.isDefined(value.SEEN) && value.SEEN === "true")
-        {
-          idUrl = "urlseen";
-        }
 
         // LINK START
         if (SETTINGS.SHOWLINK && !main.util.isObject(value.LINK))
@@ -117,6 +113,8 @@ function Grid()
           article += `<a class="article-link" href="${String(value.LINK)}" id="${idUrl}">`;
         }
       }
+
+
 
       // UPPER CONTENT START
       if (SETTINGS.SHOWUPPER)
@@ -148,6 +146,35 @@ function Grid()
           else
           {
             article += `<div class="article-linkcontainer"><div class="article-linkicon">${main.util.buildIcon('link')}</div><div class="article-linktitle">${main.util.extractRootDomain(value.LINK)}</div></div></a>`;
+          }
+        }
+
+        if (main.util.isDefined(value.GHLINK))
+        {
+          var idUrl = "ghurl";
+  
+  
+          // LINK START
+          if (SETTINGS.SHOWLINK && !main.util.isObject(value.GHLINK))
+          {
+            // If this item has only one link then make the whole title the link
+            article += `<a class="article-link" href="${String(value.GHLINK)}" id="${idUrl}">`;
+          }
+        }
+
+        if (SETTINGS.SHOWLINK && main.util.isDefined(value.GHLINK))
+        {
+          if (main.util.isObject(value.GHLINK))
+          {
+            for (let l = 0; l < value.GHLINK.length; l++)
+            {
+              article += `<a class="article-link" href="${String(value.GHLINK[l])}" id="${idUrl}">`;
+              article += `<div class="article-linkcontainer"><div class="article-linkicon">${main.util.buildIcon('ghlink')}</div><div class="article-linktitle">${main.util.extractRootDomain(value.GHLINK[l])}</div></div></a>`;
+            }
+          }
+          else
+          {
+            article += `<div class="article-linkcontainer"><div class="article-linkicon">${main.util.buildIcon('ghlink')}</div><div class="article-linktitle">${main.util.extractRootDomain(value.GHLINK)}</div></div></a>`;
           }
         }
 

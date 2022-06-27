@@ -36,6 +36,7 @@ if (window.showAdd != undefined && window.showAdd)
       this.setupElement('Date', 'DATE', 'lower');
       this.setupElement('Type', 'TYPE', 'lower');
       this.setupElement('Link', 'LINK', 'url');
+      this.setupElement('GitHub', 'GHLINK', 'url');
       this.setupElement('Person', 'PERS', 'text');
       this.setupElement('Source', 'SRCE', 'title');
       this.setupElement('Project', 'PROJ', 'text');

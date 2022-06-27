@@ -25,7 +25,7 @@
   --alpha-enabled: 1.0;
   --alpha-ascent: 1.0;
 
-  --size-menu: 150px;
+  --size-menu: 120px;
   --size-menu-item-sepv: 14px;        /*vertical space between menu items*/
   --size-menu-item-seph: 10px;        /*horizontal space between menu item count and icon*/
   --size-menu-itemgroup-sepv: 30px;   /*vertical space between menu types (types to terms, terms to tags)*/
@@ -34,12 +34,12 @@
   --size-grid-gutter: 20px;
   --size-grid-column: 350px;
 
-  --size-item-corner: 10px;
+  --size-item-corner: 8px;
   --size-item-elem-padding: 1em;      /*vertical space between grid item internal elements (tags, notes, quotes etc)*/
   --size-item-elem-sep: 0.75em;       /*horizontal space between item element icon and element text (tag icon and tags)*/
 
-  --size-font-title: 1em;
-  --size-font-body: 0.8em;
+  --size-font-title: 1.4em;
+  --size-font-body: 1em;
   --size-font-menutypes: 1em;
   --size-font-menutags: 0.8em;
   --size-font-bodytypes: 1em;         /*font size of type icon/count*/
@@ -296,7 +296,7 @@ article::selection {
   width: 100%;
 }
 .article-containerlower {
-  padding: 0 var(--size-grid-gutter) var(--size-grid-gutter);
+  padding: 0 var(--size-grid-gutter) 0;
   display: inline-block;
   z-index: 100;
 }
