@@ -86,9 +86,8 @@ const projects = [
   {
     title: "Reverse Engineering Project",
     image: "content/media/reverse.jpg",
-    description:
-      "Currently learning about and modding a popular (10M+ downloads) *REDACTED* Android application.",
-    year: 2025,
+    description: "Modding a popular (10M+ downloads) Android application.",
+    year: 0,
     tags: ["work:personal", "tech:reverse-engineering", "tech:java"],
   },
   {
@@ -122,5 +121,13 @@ const projects = [
     year: 2024,
     tags: ["work:university", "tech:razor", "tech:mvc", "tech:net", "tech:c#"],
     repo: "https://github.com/vis256/MagikarpMayhem",
+  },
+  {
+    title: "Wearable IoT Project",
+    image: "content/media/arduino.webp",
+    description:
+      "Secret project involving wearable IoT, fashion and Bluetooth.",
+    year: 0,
+    tags: ["work:personal", "tech:c++", "tech:react-native", "tech:react"],
   },
 ];

@@ -50,10 +50,21 @@ document.addEventListener("DOMContentLoaded", () => {
     return a.localeCompare(b);
   });
 
-  const sortedYears = Array.from(allYears).sort((a, b) => b - a);
+  const sortedYears = Array.from(allYears).sort((a, b) => {
+    if (a === 0) return -1;
+    if (b === 0) return 1;
+    return b - a;
+  });
 
   // Sort projects by year in descending order (most recent first)
-  const sortedProjects = projects.sort((a, b) => b.year - a.year);
+  const sortedProjects = projects.sort((a, b) => {
+    if (a.year === 0) return -1;
+    if (b.year === 0) return 1;
+    if (a.year !== b.year) {
+      return b.year - a.year;
+    }
+    return a.title.localeCompare(b.title);
+  });
 
   function renderProjects(filterTag = null) {
     projectGrid.innerHTML = "";
@@ -92,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         yearGroup.id = `year-${year}`;
 
         const yearTitle = document.createElement("h2");
-        yearTitle.textContent = year;
+        yearTitle.textContent = year === 0 ? "Currently working" : year;
         yearGroup.appendChild(yearTitle);
 
         const grid = document.createElement("div");
@@ -188,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sortedYears.forEach((year) => {
       const link = document.createElement("a");
       link.href = `#year-${year}`;
-      link.textContent = year;
+      link.textContent = year === 0 ? "Now" : year;
       link.onclick = (e) => {
         e.preventDefault();
         document
