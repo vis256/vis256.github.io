@@ -27,7 +27,7 @@ const projects = [
     image: "content/media/scada.png",
     description: `High-performance browser viewer for gigantic SVG maps from SCADA systems.\n*Image not related*`,
     year: 2024,
-    tags: ["work:psi", "tech:angular", "tech:typescript", "webcomponents"],
+    tags: ["work:psi", "tech:angular", "tech:typescript", "tech:webcomponents"],
   },
   {
     title: "osu!stego",
@@ -35,6 +35,7 @@ const projects = [
     description: `Master thesis project on implementing steganography into osu!, a popular open-source rhythm game.`,
     year: 2025,
     tags: ["work:university", "tech:c#", "tech:net", "tech:python"],
+    repo: "https://github.com/MagisterkaOsu/osu",
   },
   {
     title: "LitterLooter",
@@ -47,6 +48,7 @@ const projects = [
       "tech:react",
       "tech:typescript",
     ],
+    repo: "https://github.com/Inzynierka2024/trash-client",
   },
   {
     title: "tilde-dawn",
@@ -55,6 +57,7 @@ const projects = [
     year: 2023,
     tags: ["work:personal", "tech:javascript", "tech:html", "tech:css"],
     link: "https://vis256.github.io/tilde-dawn/",
+    repo: "https://github.com/vis256/tilde-dawn/",
   },
   {
     title: "inkfind",
@@ -63,6 +66,7 @@ const projects = [
     year: 2022,
     tags: ["work:personal", "tech:next.js", "tech:react", "tech:typescript"],
     link: "https://inkfind.vercel.app/",
+    repo: "https://github.com/vis256/inkfind/",
   },
   {
     title: "AndroidDeskThing",
@@ -77,6 +81,7 @@ const projects = [
       "tech:python",
       "tech:windows",
     ],
+    repo: "https://github.com/vis256/AndroidDeskThing",
   },
   {
     title: "Reverse Engineering Project",
@@ -100,6 +105,7 @@ const projects = [
       "Interface for a web-service designed for easily creating internet multiplayer games.",
     year: 2022,
     tags: ["work:akai", "tech:vue", "tech:typescript", "tech:javascript"],
+    repo: "https://github.com/akai-org/joystick_monorepo",
   },
   {
     title: "Internet Music Hall",
@@ -107,5 +113,14 @@ const projects = [
     description: "A virtual music hall.",
     year: 2023,
     tags: ["work:university", "tech:electron", "tech:c++", "tech:javascript"],
+    repo: "https://github.com/vis256/SK2-project",
+  },
+  {
+    title: "Magikarp Mayhem",
+    image: "content/media/magikarpmayhem.png",
+    description: "Social Media for Pokémon trainers.",
+    year: 2024,
+    tags: ["work:university", "tech:razor", "tech:mvc", "tech:net", "tech:c#"],
+    repo: "https://github.com/vis256/MagikarpMayhem",
   },
 ];
