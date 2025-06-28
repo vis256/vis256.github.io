@@ -12,36 +12,13 @@ body {
   gap: 16px;
 }
 
-#logo-container {
-  width: 48px; /* Match filter width */
-  height: 48px; /* Make it square */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #f0f0f0;
-  margin-bottom: 20px;
-  font-size: 3em;
-  line-height: 0.8;
-  text-align: center;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  position: sticky;
-  top: 20px;
-  align-self: flex-start;
-  z-index: 10; /* Ensure it stays on top */
-}
-
-#logo-container pre {
-  margin: 0;
-  padding: 0;
-}
-
 .grid-container {
   flex-grow: 1;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
 }
 
@@ -55,6 +32,8 @@ body {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .project-tile h3 {
@@ -78,6 +57,7 @@ body {
   width: 176px; /* Fixed width for filters */
   max-width: 176px;
   min-width: 176px;
+  height: 100%;
 }
 
 .filters #tag-filters {
@@ -99,7 +79,7 @@ body {
 }
 
 .filters #tag-filters button.category-separator {
-  margin-bottom: 10px; /* Add margin to separate categories */
+  margin-top: 10px; /* Add margin to separate categories */
 }
 
 .tags span {

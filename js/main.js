@@ -15,18 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Define custom tag category order
-  const tagCategoryOrder = [
-    "tech",
-    "university",
-    "game",
-    "hardware",
-    "iot",
-    "security",
-    "cloud",
-    "robotics",
-    "open-source",
-    // Add more categories as needed. Tags not listed here will appear after sorted categories.
-  ];
+  const tagCategoryOrder = ["work", "tech"];
 
   projects.forEach((project) => {
     project.tags.forEach((tag) => allTags.add(tag));
@@ -135,11 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
       button.textContent = tag;
 
       const currentCategory = getCategory(tag);
-      if (
-        lastCategory !== null &&
-        currentCategory !== lastCategory &&
-        currentCategory !== ""
-      ) {
+      if (lastCategory !== null && currentCategory !== lastCategory) {
         button.classList.add("category-separator");
       }
       lastCategory = currentCategory;

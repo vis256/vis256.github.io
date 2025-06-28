@@ -1,136 +1,111 @@
-
 const projects = [
-    {
-        "title": "Project 1",
-        "image": "content/media/graph.png",
-        "description": "A cool project about graphs.",
-        "year": 2023,
-        "tags": ["tech:javascript", "tech:html", "tech:css", "university"]
-    },
-    {
-        "title": "Project 2",
-        "image": "content/media/hexcells.jpg",
-        "description": "A fun game.",
-        "year": 2022,
-        "tags": ["tech:python", "game"]
-    },
-    {
-        "title": "Project 3",
-        "image": "content/media/inkfind2.jpg",
-        "description": "An app for finding things.",
-        "year": 2023,
-        "tags": ["tech:java", "android"]
-    },
-    {
-        "title": "Project 4",
-        "image": "content/media/joystick.png",
-        "description": "A hardware project.",
-        "year": 2021,
-        "tags": ["hardware", "tech:c++"]
-    },
-    {
-        "title": "Project 5",
-        "image": "content/media/lexell.jpg",
-        "description": "A reverse engineering challenge.",
-        "year": 2022,
-        "tags": ["reverse engineering", "tech:assembly"]
-    },
-    {
-        "title": "Project 6",
-        "image": "content/media/tilde.jpg",
-        "description": "A website for tildes.",
-        "year": 2020,
-        "tags": ["tech:javascript", "web"]
-    },
-    {
-        "title": "Project 7",
-        "image": "content/media/graph.png",
-        "description": "Another university project.",
-        "year": 2023,
-        "tags": ["tech:python", "university"]
-    },
-    {
-        "title": "Project 8",
-        "image": "content/media/hexcells.jpg",
-        "description": "A mobile game.",
-        "year": 2021,
-        "tags": ["tech:c#", "game", "mobile"]
-    },
-    {
-        "title": "Project 9",
-        "image": "content/media/inkfind2.jpg",
-        "description": "A data visualization tool.",
-        "year": 2022,
-        "tags": ["tech:javascript", "data-visualization"]
-    },
-    {
-        "title": "Project 10",
-        "image": "content/media/graph.png",
-        "description": "A web scraper.",
-        "year": 2020,
-        "tags": ["tech:python", "web"]
-    },
-    {
-        "title": "Project 11",
-        "image": "content/media/hexcells.jpg",
-        "description": "A desktop app.",
-        "year": 2021,
-        "tags": ["tech:c#", "desktop"]
-    },
-    {
-        "title": "Project 12",
-        "image": "content/media/inkfind2.jpg",
-        "description": "A machine learning model.",
-        "year": 2023,
-        "tags": ["tech:python", "machine-learning"]
-    },
-    {
-        "title": "Project 13",
-        "image": "content/media/joystick.png",
-        "description": "An IoT device.",
-        "year": 2022,
-        "tags": ["hardware", "iot"]
-    },
-    {
-        "title": "Project 14",
-        "image": "content/media/lexell.jpg",
-        "description": "A security analysis tool.",
-        "year": 2021,
-        "tags": ["security", "tech:c++"]
-    },
-    {
-        "title": "Project 15",
-        "image": "content/media/tilde.jpg",
-        "description": "A personal blog.",
-        "year": 2020,
-        "tags": ["web", "tech:javascript"]
-    },
-    {
-        "title": "Project 16",
-        "image": "content/media/graph.png",
-        "description": "A contribution to an open-source project.",
-        "year": 2023,
-        "tags": ["open-source", "tech:go"]
-    },
-    {
-        "title": "Project 17",
-        "image": "content/media/hexcells.jpg",
-        "description": "A puzzle game.",
-        "year": 2022,
-        "tags": ["game", "tech:gdscript"]
-    },
-    {
-        "title": "Project 18",
-        "image": "content/media/inkfind2.jpg",
-        "description": "A cloud-based service.",
-        "year": 2021,
-        "tags": ["cloud", "tech:java"]
-    },
-    {
-        "title": "Project 19",
-        "image": "content/media/joystick.png",
-        "description": "A robotics project.",
-        "year": 2020,
-        "tags": ["robotics", "tech:python"]
-    }
+  {
+    title: "Confidential PSI Project",
+    image: "content/media/placeholder.jpg",
+    description:
+      "Confidential project related to SCADAs, built with highest web standards.",
+    year: 2025,
+    tags: ["work:psi", "tech:angular", "tech:typescript", "tech:javascript"],
+  },
+  {
+    title: "PSIctaWeb",
+    image: "content/media/placeholder.jpg",
+    description: "Complex electrical grid outage visualization tool.",
+    year: 2023,
+    tags: ["work:psi", "tech:angular", "tech:typescript", "tech:javascript"],
+  },
+  {
+    title: "PSISEMSWeb 2.0",
+    image: "content/media/placeholder.jpg",
+    description:
+      "Redesigned interface for custom distributor system used by PGE.",
+    year: 2024,
+    tags: ["work:psi", "tech:angular", "tech:typescript", "tech:javascript"],
+  },
+  {
+    title: "tiled-svg-viewer",
+    image: "content/media/scada.png",
+    description: `High-performance browser viewer for gigantic SVG maps from SCADA systems.\n*Image not related*`,
+    year: 2024,
+    tags: ["work:psi", "tech:angular", "tech:typescript", "webcomponents"],
+  },
+  {
+    title: "osu!stego",
+    image: "content/media/osu.jpg",
+    description: `Master thesis project on implementing steganography into osu!, a popular open-source rhythm game.`,
+    year: 2025,
+    tags: ["work:university", "tech:c#", "tech:net", "tech:python"],
+  },
+  {
+    title: "LitterLooter",
+    image: "content/media/litterlooter.png",
+    description: `Bachelor thesis project on creating a game about cleaning up the environment, Pokémon GO-style.`,
+    year: 2023,
+    tags: [
+      "work:university",
+      "tech:react-native",
+      "tech:react",
+      "tech:typescript",
+    ],
+  },
+  {
+    title: "tilde-dawn",
+    image: "content/media/tilde.jpg",
+    description: "Fork of popular startpage tilde, made nicer.",
+    year: 2023,
+    tags: ["work:personal", "tech:javascript", "tech:html", "tech:css"],
+    link: "https://vis256.github.io/tilde-dawn/",
+  },
+  {
+    title: "inkfind",
+    image: "content/media/inkfind2.jpg",
+    description: "A tool for finding fountain pen inks by colour.",
+    year: 2022,
+    tags: ["work:personal", "tech:next.js", "tech:react", "tech:typescript"],
+    link: "https://inkfind.vercel.app/",
+  },
+  {
+    title: "AndroidDeskThing",
+    image: "content/media/androiddeskthing.jpg",
+    description: "Spotify's Car Thing, but on Android phones.",
+    year: 2024,
+    tags: [
+      "work:university",
+      "tech:react-native",
+      "tech:react",
+      "tech:typescript",
+      "tech:python",
+      "tech:windows",
+    ],
+  },
+  {
+    title: "Reverse Engineering Project",
+    image: "content/media/reverse.jpg",
+    description:
+      "Currently learning about and modding a popular (10M+ downloads) *REDACTED* Android application.",
+    year: 2025,
+    tags: ["work:personal", "tech:reverse-engineering", "tech:java"],
+  },
+  {
+    title: "Hexcells Clone",
+    image: "content/media/hexcells2.png",
+    description: "A clone of the popular Hexcells puzzle game.",
+    year: 2021,
+    tags: ["work:university", "tech:c", "tech:raylib"],
+  },
+  {
+    title: "Joystick",
+    image: "content/media/joystick.png",
+    description:
+      "Interface for a web-service designed for easily creating internet multiplayer games.",
+    year: 2022,
+    tags: ["work:akai", "tech:vue", "tech:typescript", "tech:javascript"],
+  },
+  {
+    title: "Internet Music Hall",
+    image: "content/media/piano.png",
+    description: "A virtual music hall.",
+    year: 2023,
+    tags: ["work:university", "tech:electron", "tech:c++", "tech:javascript"],
+  },
 ];
