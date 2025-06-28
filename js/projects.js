@@ -1,35 +1,5 @@
 const projects = [
   {
-    title: "Confidential PSI Project",
-    image: "content/media/placeholder.jpg",
-    description:
-      "Confidential project related to SCADAs, built with highest web standards.",
-    year: 2025,
-    tags: ["work:psi", "tech:angular", "tech:typescript", "tech:javascript"],
-  },
-  {
-    title: "PSIctaWeb",
-    image: "content/media/placeholder.jpg",
-    description: "Complex electrical grid outage visualization tool.",
-    year: 2023,
-    tags: ["work:psi", "tech:angular", "tech:typescript", "tech:javascript"],
-  },
-  {
-    title: "PSISEMSWeb 2.0",
-    image: "content/media/placeholder.jpg",
-    description:
-      "Redesigned interface for custom distributor system used by PGE.",
-    year: 2024,
-    tags: ["work:psi", "tech:angular", "tech:typescript", "tech:javascript"],
-  },
-  {
-    title: "tiled-svg-viewer",
-    image: "content/media/scada.png",
-    description: `High-performance browser viewer for gigantic SVG maps from SCADA systems.\n*Image not related*`,
-    year: 2024,
-    tags: ["work:psi", "tech:angular", "tech:typescript", "tech:webcomponents"],
-  },
-  {
     title: "osu!stego",
     image: "content/media/osu.jpg",
     description: `Master thesis project on implementing steganography into osu!, a popular open-source rhythm game.`,
