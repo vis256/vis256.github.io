@@ -100,11 +100,4 @@ const projects = [
     year: 0,
     tags: ["work:personal", "tech:c++", "tech:react-native", "tech:react"],
   },
-  {
-    title: "Kenoma",
-    image: "content/media/art-dots-vector.jpg",
-    description: "Firefox Mobile fork. Super lightweight and no distractions.",
-    year: 0,
-    tags: ["work:personal", "tech:javascript", "tech:java"],
-  },
 ];
