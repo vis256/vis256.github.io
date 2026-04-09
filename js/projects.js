@@ -100,4 +100,11 @@ const projects = [
     year: 0,
     tags: ["work:personal", "tech:c++", "tech:react-native", "tech:react"],
   },
+  {
+    title: "shuuk",
+    image: "content/media/jp.png",
+    description: "AI-powered webnovel translator.",
+    year: 0,
+    tags: ["work:personal", "tech:ai", "tech:llm"],
+  },
 ];
